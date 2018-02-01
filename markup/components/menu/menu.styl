@@ -1,0 +1,20 @@
+.menu-list
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin 0
+    padding 0
+    text-indent 0
+    list-style none
+    list-style-position outside
+    &__item
+        margin: 0 12px;
+        &:after
+            content ''
+            display: block;
+            margin-top: 3px;
+            height: 3px;
+            width: calc(100% + 20px);
+            margin-left -10px;
+    &__item:hover:after
+            background: #4B21FF;

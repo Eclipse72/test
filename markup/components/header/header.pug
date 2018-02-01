@@ -1,0 +1,9 @@
+include ../../components/social/social.pug
+
+mixin header(data)
+    header
+        .page__wraper
+            a.home(href="crtweb.ru")
+                |crtweb.ru
+            +social(social)
+            a.search
