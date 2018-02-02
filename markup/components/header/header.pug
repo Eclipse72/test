@@ -1,9 +1,11 @@
 include ../../components/social/social.pug
 
 mixin header(data)
-    header
+    header.header
         .page__wraper
             a.home(href="crtweb.ru")
                 |crtweb.ru
-            +social(social)
+            //- data, color, text, class
+            +social(social, 'gray', false, 'size-l')
             a.search
+                != pugHelpers.Icon.call(locals, {iconName: "search"})

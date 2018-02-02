@@ -16,6 +16,7 @@ html(class="no-js", lang="ru")
         +header(header)
         section.page__wraper
             a.logo(href="/index.html")
+                != pugHelpers.Icon.call(locals, {iconName: "logo_crtweb"})
             +menu(menu)
             main
                 +article()

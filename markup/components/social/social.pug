@@ -1,6 +1,8 @@
-mixin social(data)
-    ul.social
+mixin social(data, color, text, size)
+    ul.social(class=size ? size : '')
         each item in data.items
             li.social__item
-                a.social-link= item
-
+                a.social-link
+                    != pugHelpers.Icon.call(locals, {iconName: item+'_'+color})
+                    if text
+                        span &nbsp;#{item}
