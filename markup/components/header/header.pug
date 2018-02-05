@@ -2,10 +2,10 @@ include ../../components/social/social.pug
 
 mixin header(data)
     header.header
-        .page__wraper
+        .container
             a.home(href="crtweb.ru")
                 |crtweb.ru
             //- data, color, text, class
-            +social(social, 'gray', false, 'size-l')
+            +social(social, 'gray', false, 'medium')
             a.search
-                != pugHelpers.Icon.call(locals, {iconName: "search"})
+                != pugHelpers.Icon.call(locals, {iconName: "search", className: "icon icon_search"})

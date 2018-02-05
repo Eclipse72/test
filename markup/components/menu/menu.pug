@@ -2,5 +2,5 @@ mixin menu(data)
     nav.menu
         ul.menu-list
             each item in data.items
-                li.menu-list__item
-                    a.item-link= item
+                li.menu-list__item(class={'menu-list__item_is-active': item.url === '/'} href=item.url)
+                    a.menu-list__item-link= item.name

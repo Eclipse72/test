@@ -7,12 +7,15 @@
     text-indent 0
     list-style none
     list-style-position outside
+    &&_size_medium
+        height: 55px;
+    &&_size_large
+        height: 146px;
     &__item
         margin: 0 12px;
-.social-link
-    display: flex;
-    align-items: center;
-    &>span
-        margin-left: 12px;
-.footer>.social
-    height: 146px;
+    &__item-link
+        display: flex;
+        align-items: center;
+        &>span
+            margin-left: 12px;
+            text-transform: capitalize;

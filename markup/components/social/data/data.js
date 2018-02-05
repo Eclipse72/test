@@ -1,3 +1,3 @@
 social: {
-    items: ['Dribbble', 'Behance', 'Twitter', 'Facebook', 'Instagram']
+    items: ['dribbble', 'behance', 'twitter', 'facebook', 'instagram']
 }

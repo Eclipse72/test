@@ -3,14 +3,14 @@ mixin article(data)
         .wrap
             each row in [1, 2, 3]
                 article.article
+                    a.article-more(href="#")
                     if col==1&&row==3 || col==2&&row==1 || col==3&&row==2
                         img.article__img.article__img_large
                     else
                         img.article__img
-                    a.article__group
+                    a.article__group(href="/group")
                         |Разработка
                     header.article__header
                         |Все что нужно знать
                     span.article__date
                         |4 декабря
-

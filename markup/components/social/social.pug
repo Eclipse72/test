@@ -1,8 +1,9 @@
 mixin social(data, color, text, size)
-    ul.social(class=size ? size : '')
+    ul.social(class=size ? 'social_size_'+size : '')
         each item in data.items
             li.social__item
-                a.social-link
-                    != pugHelpers.Icon.call(locals, {iconName: item+'_'+color})
+                a.social__item-link
+                    != pugHelpers.Icon.call(locals, {iconName: item+'_'+color, className: 'icon icon_'+item})
                     if text
                         span &nbsp;#{item}
+
